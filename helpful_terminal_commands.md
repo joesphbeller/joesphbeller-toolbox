@@ -70,6 +70,12 @@ sacctmgr list association -p
 mv $(ls -t | head -n 4) ./$subdirectory_location/
 ```
 
+## Update Github credentials (when token expires)
+https://github.com/orgs/community/discussions/55852
+```
+git credential-osxkeychain erase host=github.com protocol=https
+```
+
 ## Showing an image in RStudio
 
 ```r
